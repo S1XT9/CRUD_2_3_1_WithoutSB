@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${users}">
+      <td th:text="${users.getAllUsers()}"></td>
+      <td th:text="${}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
